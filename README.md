@@ -1,1 +1,1 @@
-# fe-1
+# The first side project in frontend practice 
