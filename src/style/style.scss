@@ -1,0 +1,59 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin dancing-script-font-family {
+    font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+    color: #E2AB3F;
+}
+
+.intro {
+    margin-bottom: 200px;
+    padding: 0 72px;
+    min-height: 1080px;
+    background-image: url('/src/assets/raster/intro.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &__control-wrap {
+        padding-bottom: 172px;
+        @include flex-center-space-between();
+
+        &__links-container {
+            min-width: 370px;
+            @include flex-center-space-between();
+
+            &__link {
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                cursor: pointer;
+            }
+        }
+
+        .intro__phone-container {
+            @include flex-center();
+            gap: 10px;
+
+            &__link {
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 25rem;
+        line-height: 33.4rem;
+    }
+
+
+}
+

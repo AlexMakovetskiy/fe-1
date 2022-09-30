@@ -1,0 +1,27 @@
+body {
+    min-width: 1920px;
+    max-width: 1920px;
+    font-family: 'Roboto Condensed', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.medium-conteiner,
+.small-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.large-container {
+    max-width: 1560px; 
+    width: 100%;
+}
+
+.medium-conteiner {
+    max-width: 1300px;
+}
+
+.small-container {
+    max-width: 1200px;
+}
